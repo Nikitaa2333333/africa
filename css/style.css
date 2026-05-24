@@ -1023,10 +1023,16 @@ header:not(.scrolled) .logo-img {
   padding: 24px 0;
   background: var(--bg-main);
   display: flex;
+  /* Force GPU compositing layer — fixes iOS Safari overflow:hidden clipping of animated children */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
-.partners-carousel-wrapper:hover .partners-track {
-  animation-play-state: paused;
+/* Pause on hover only for devices with a real pointer (not touch screens) */
+@media (hover: hover) {
+  .partners-carousel-wrapper:hover .partners-track {
+    animation-play-state: paused;
+  }
 }
 
 .partners-carousel-wrapper::before,
@@ -1054,6 +1060,7 @@ header:not(.scrolled) .logo-img {
   flex-shrink: 0;
   align-items: center;
   padding-right: 64px;
+  -webkit-animation: marquee 28s linear infinite;
   animation: marquee 28s linear infinite;
   will-change: transform;
 }
@@ -1095,6 +1102,10 @@ header:not(.scrolled) .logo-img {
   letter-spacing: 0.04em;
 }
 
+@-webkit-keyframes marquee {
+  from { -webkit-transform: translateX(0); transform: translateX(0); }
+  to   { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-100%); }
