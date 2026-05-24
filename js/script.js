@@ -1,6 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ==========================================
+  // 0. УМНАЯ ЗАГРУЗКА HERO-ВИДЕО
+  // ==========================================
+  (function initHeroVideo() {
+    const video = document.getElementById('hero-video');
+    if (!video) return;
+
+    // Плавное появление видео только когда оно готово воспроизводиться
+    video.addEventListener('canplay', () => {
+      video.style.opacity = '1';
+    }, { once: true });
+
+    // Принудительный запуск на мобилках (некоторые Safari требуют явного вызова)
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Автоплей заблокирован — оставляем poster (не критично)
+        video.style.opacity = '0';
+      });
+    }
+
+    // Пауза при уходе со страницы (экономия батареи)
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        video.pause();
+      } else {
+        video.play().catch(() => {});
+      }
+    });
+  })();
+
+
+  // ==========================================
   // 1. МЕНЮ НАВИГАЦИИ & HEADER SCROLL
   // ==========================================
   const header = document.getElementById('site-header');

@@ -357,6 +357,8 @@ header:not(.scrolled) .logo-img {
   object-fit: cover;
   z-index: 0;
   pointer-events: none;
+  opacity: 0;                                    /* Скрыт до готовности */
+  transition: opacity 0.6s ease;                 /* Плавное появление */
 }
 
 /* Градиент снизу — видео в фокусе, текст читаем */
