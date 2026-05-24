@@ -1,0 +1,8 @@
+# Исключить архив резервной копии
+africatrade_site.zip
+
+# Временные папки окружения
+__pycache__/
+.idea/
+.vscode/
+*.log

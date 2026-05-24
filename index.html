@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AFRICATRADE — надежный логистический мост между Россией и Африкой. Поиск B2B поставщиков, таможенное оформление, мультимодальные перевозки и комплексное сопровождение импортно-экспортных сделок.">
+  <title>AFRICATRADE — B2B Торговля и Логистика Россия-Африка</title>
+  
+  <!-- Стили дизайн-системы -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header id="site-header">
+    <div class="container">
+      <nav aria-label="Основная навигация">
+        <a href="#hero" class="logo" id="header-logo-link" aria-label="AFRICATRADE На главную">
+          <img src="assets/images/logo.png" alt="AFRICATRADE" class="logo-img">
+          <div class="logo-text-wrapper">
+            <div class="logo-text">AFRICA<span>TRADE</span></div>
+            <div class="logo-subtext">Россия — Африка</div>
+          </div>
+        </a>
+        
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#partners">Партнеры</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#contacts" class="btn btn-primary" id="nav-cta-btn">Связаться</a></li>
+          <li class="nav-menu-footer">
+            <div class="nav-menu-divider"></div>
+            <div class="nav-menu-contacts">
+              <span class="nav-menu-label">Связь с нами</span>
+              <a href="tel:+74959703388" class="nav-menu-phone">+7 (495) 970-33-88</a>
+              <a href="mailto:info@africa-trade.ru" class="nav-menu-email">info@africa-trade.ru</a>
+              <span class="nav-menu-address">г. Москва, Пресненская наб. 8, стр. 1</span>
+            </div>
+          </li>
+        </ul>
+        
+        <button class="menu-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Открыть мобильное меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Главный экран (Hero) -->
+    <section id="hero" class="hero">
+
+      <!-- Видео-фон -->
+      <video class="hero-video-bg" autoplay loop muted playsinline>
+        <source src="0523 (2).mp4" type="video/mp4">
+      </video>
+      <!-- Затемняющий оверлей поверх видео -->
+      <div class="hero-video-overlay"></div>
+
+      <div class="container" style="position: relative; z-index: 2; padding-bottom: 72px;">
+        <div class="hero-content">
+          <div class="hero-badges animate-fade-rise" style="margin-bottom: 32px;">
+            <div class="badge"><span class="dot"></span>B2B Импорт & Экспорт</div>
+            <div class="badge"><span class="dot"></span>Прямые поставки</div>
+          </div>
+
+          <h1 id="hero-heading" class="animate-fade-rise-delay">Торговый мост<br><span>Россия — Африка</span></h1>
+          <p class="hero-description animate-fade-rise-delay-2" id="hero-desc">
+            Обеспечиваем надежные международные поставки, таможенное оформление грузов и юридическую координацию B2B сделок под ключ. Откройте новые рынки сбыта уже сегодня.
+          </p>
+
+          <div class="hero-cta animate-fade-rise-delay-2">
+            <a href="#contacts" class="btn btn-primary" id="hero-primary-cta">Начать сотрудничество</a>
+            <a href="#services" class="btn btn-secondary" id="hero-secondary-cta">Наши услуги</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция услуг (Services) -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="services-header-row">
+          <div class="section-header reveal" style="text-align:left; margin:0;">
+            <span class="section-subtitle">Для вашего бизнеса</span>
+            <h2 class="section-title" id="services-heading">Комплексные B2B решения</h2>
+            <p class="section-desc">Полный спектр услуг по координации торговых потоков, логистике и юридическому сопровождению на африканском континенте.</p>
+          </div>
+          <div class="services-nav">
+            <button class="services-arrow" id="services-prev" aria-label="Предыдущая карточка">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+            <button class="services-arrow" id="services-next" aria-label="Следующая карточка">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div><!-- /container -->
+
+      <!-- Обертка слайдера для фиксации по линии модуля и добавления правого градиента -->
+      <div class="services-slider-wrapper">
+        <div class="services-grid">
+          <article class="service-card" id="service-logistics">
+            <span class="service-num">01</span>
+            <h3>Грузоперевозки & ВЭД</h3>
+            <p>Организуем доставку любых грузов между РФ, Африкой и Китаем в кратчайшие сроки. Полное таможенное оформление и сопровождение документов под ключ.</p>
+          </article>
+
+          <article class="service-card" id="service-tourism">
+            <span class="service-num">02</span>
+            <h3>Туризм & Сафари</h3>
+            <p>Экзотические путешествия на сафари, завораживающий сноркелинг, бронирование отелей и организация незабываемого отдыха в живописных уголках Африки.</p>
+          </article>
+
+          <article class="service-card" id="service-realestate">
+            <span class="service-num">03</span>
+            <h3>Недвижимость</h3>
+            <p>Поиск и подбор жилой и коммерческой недвижимости по самым выгодным ценам. Полное юридическое сопровождение сделок и подготовка документов.</p>
+          </article>
+
+          <article class="service-card" id="service-construction">
+            <span class="service-num">04</span>
+            <h3>Строительство</h3>
+            <p>Проектирование и возведение современных комфортабельных вилл вашей мечты. Разработка индивидуальных планировок, адаптированных под ваши запросы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция проектов (Projects) -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Наш ассортимент и проекты</span>
+          <h2 class="section-title" id="projects-heading">Реализованные проекты и поставки</h2>
+          <p class="section-desc">Обеспечиваем надежное снабжение африканских предприятий промышленным оборудованием и строительными материалами.</p>
+        </div>
+
+        <!-- Переключатель вкладок (Табы) -->
+        <div class="projects-tabs" role="tablist" aria-label="Категории проектов">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="machinery-pane" id="tab-machinery">
+            Промышленное оборудование
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="materials-pane" id="tab-materials">
+            Строительные материалы
+          </button>
+        </div>
+
+        <!-- Содержимое вкладок -->
+        <div class="tab-content">
+          <!-- Вкладка 1: Промышленное оборудование -->
+          <div class="tab-pane active" id="machinery-pane" role="tabpanel" aria-labelledby="tab-machinery">
+            <div class="projects-grid">
+              
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/betonosmesitel.png" alt="Бетоносмеситель БС-260_380" class="project-image" loading="lazy">
+                </div>
+                <h3>Бетоносмеситель БС-260_380</h3>
+                <p>Высокопроизводительное оборудование для приготовления бетонных смесей на строительных площадках.</p>
+              </article>
+
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/vacuum_machine.png" alt="Вакуумно-формовочный станок ТВФМ-10×9-111" class="project-image" loading="lazy">
+                </div>
+                <h3>Вакуумно-формовочный станок ТВФМ-10×9-111</h3>
+                <p>Промышленное решение для формования термопластичных материалов под воздействием вакуума.</p>
+              </article>
+
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/vibrostol.png" alt="Вибростол ВСГу-001_380В" class="project-image" loading="lazy">
+                </div>
+                <h3>Вибростол ВСГу-001_380В</h3>
+                <p>Вибростол с горизонтальной вибрацией серии Премиум для уплотнения бетонных смесей.</p>
+              </article>
+
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/izmelchitel.png" alt="Измельчитель газобетона" class="project-image" loading="lazy">
+                </div>
+                <h3>Измельчитель газобетона</h3>
+                <p>Специализированная установка для переработки и измельчения блоков и отходов газобетона.</p>
+              </article>
+
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/proseivatel.png" alt="Просеиватель со сварной сеткой" class="project-image" loading="lazy">
+                </div>
+                <h3>Просеиватель со сварной сеткой</h3>
+                <p>Просеиватель с лотком 380В для разделения сыпучих материалов по фракциям на производстве.</p>
+              </article>
+
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/smesitel_aktivator.png" alt="Смеситель-активатор (0,43м³) под скиповый подъемник" class="project-image" loading="lazy">
+                </div>
+                <h3>Смеситель-активатор (0,43м³) под скиповый подъемник</h3>
+                <p>Высокоэффективное оборудование для активации и смешивания цементно-песчаных смесей при производстве газобетона.</p>
+              </article>
+
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/burovoe.png" alt="Буровое оборудование" class="project-image" loading="lazy">
+                </div>
+                <h3>Буровое оборудование</h3>
+                <p>Комплексные установки и буровые компоненты для геологических изысканий и бурения скважин.</p>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Вкладка 2: Строительные материалы -->
+          <div class="tab-pane" id="materials-pane" role="tabpanel" aria-labelledby="tab-materials" style="display: none;">
+            <div class="projects-grid">
+              
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/doors.png" alt="Входные и межкомнатные двери" class="project-image" loading="lazy">
+                </div>
+                <h3>Входные и межкомнатные двери</h3>
+                <p>Поставка надежных дверных блоков различных конфигураций для жилых и офисных помещений.</p>
+              </article>
+
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/windows.png" alt="Современные оконные системы" class="project-image" loading="lazy">
+                </div>
+                <h3>Современные оконные системы</h3>
+                <p>Металлопластиковые и алюминиевые окна с повышенной тепло- и шумоизоляцией.</p>
+              </article>
+
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/foam_glue.png" alt="Пеноклей для газобетона" class="project-image" loading="lazy">
+                </div>
+                <h3>Пеноклей для газобетона</h3>
+                <p>Профессиональный полиуретановый клей для быстрого и прочного монтажа блоков из ячеистого бетона.</p>
+              </article>
+
+              <article class="project-card glass-panel">
+                <div class="project-image-wrapper">
+                  <img src="assets/images/projects/additives.png" alt="Химические добавки для бетона" class="project-image" loading="lazy">
+                </div>
+                <h3>Химические добавки для бетона</h3>
+                <p>Пластификаторы и модификаторы для повышения прочности, водонепроницаемости и морозостойкости.</p>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <!-- Секция партнеров (Partners) -->
+    <section id="partners" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Нам доверяют</span>
+          <h2 class="section-title" id="partners-heading">Ключевые партнеры</h2>
+          <p class="section-desc">Сотрудничаем с ведущими международными компаниями для создания надежных и эффективных B2B-каналов.</p>
+        </div>
+        
+        <!-- Бегущая строка партнеров -->
+        <div class="partners-carousel-wrapper">
+          <div class="partners-carousel" id="partners-carousel-track">
+            <!-- Список партнеров, дублированный для бесшовности -->
+            <div class="partner-item">
+              <img src="assets/images/partners/done_group.png" alt="African New Generation" class="partner-logo-img">
+              <span class="partner-name">African New Generation</span>
+            </div>
+            <div class="partner-item">
+              <img src="assets/images/partners/african_sun_power.png" alt="African Sun Power" class="partner-logo-img">
+              <span class="partner-name">African Sun Power</span>
+            </div>
+            <div class="partner-item">
+              <img src="assets/images/partners/done_site.png" alt="DoneSite" class="partner-logo-img">
+              <span class="partner-name">DoneSite</span>
+            </div>
+            <div class="partner-item">
+              <img src="assets/images/partners/arhar_kvartz.png" alt="ArharKvartz" class="partner-logo-img">
+              <span class="partner-name">ArharKvartz</span>
+            </div>
+            <div class="partner-item">
+              <img src="assets/images/partners/mercury_trigon.jpg" alt="Mercury Trigon" class="partner-logo-img">
+              <span class="partner-name">Mercury Trigon</span>
+            </div>
+            <div class="partner-item">
+              <img src="assets/images/partners/artem_v_africa.png" alt="Artem V Africa" class="partner-logo-img">
+              <span class="partner-name">Artem V Africa</span>
+            </div>
+            
+            <!-- Копия для бесшовной прокрутки -->
+            <div class="partner-item">
+              <img src="assets/images/partners/done_group.png" alt="African New Generation" class="partner-logo-img">
+              <span class="partner-name">African New Generation</span>
+            </div>
+            <div class="partner-item">
+              <img src="assets/images/partners/african_sun_power.png" alt="African Sun Power" class="partner-logo-img">
+              <span class="partner-name">African Sun Power</span>
+            </div>
+            <div class="partner-item">
+              <img src="assets/images/partners/done_site.png" alt="DoneSite" class="partner-logo-img">
+              <span class="partner-name">DoneSite</span>
+            </div>
+            <div class="partner-item">
+              <img src="assets/images/partners/arhar_kvartz.png" alt="ArharKvartz" class="partner-logo-img">
+              <span class="partner-name">ArharKvartz</span>
+            </div>
+            <div class="partner-item">
+              <img src="assets/images/partners/mercury_trigon.jpg" alt="Mercury Trigon" class="partner-logo-img">
+              <span class="partner-name">Mercury Trigon</span>
+            </div>
+            <div class="partner-item">
+              <img src="assets/images/partners/artem_v_africa.png" alt="Artem V Africa" class="partner-logo-img">
+              <span class="partner-name">Artem V Africa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция контактов (Contacts) -->
+    <section id="contacts" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Связаться с нами</span>
+          <h2 class="section-title" id="contact-heading">Оставить заявку</h2>
+          <p class="section-desc">Опишите вашу задачу по импорту или экспорту, и наши специалисты по ВЭД свяжутся с вами в течение часа.</p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h4>Телефон</h4>
+                <p><a href="tel:+74959703388" id="contact-phone-link">+7 (495) 970-33-88</a></p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="22,6 12,13 2,6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h4>Электронная почта</h4>
+                <p><a href="mailto:info@africa-trade.ru" id="contact-email-link">info@africa-trade.ru</a></p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h4>Главный офис в Москве</h4>
+                <p>г. Москва, Пресненская наб. 8, стр. 1, помещение 332</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 12h20" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h4>Региональный офис в Кении</h4>
+                <p>г. Момбаса (обслуживание Африканского региона)</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Форма отправки -->
+          <div class="form-panel glass-panel">
+            <div class="form-success-alert" id="success-alert" role="alert">
+              Спасибо! Ваша заявка успешно отправлена. Специалист свяжется с вами в течение часа.
+            </div>
+            
+            <form id="b2b-contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label-active">Ваше имя *</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="Иван Иванов" required aria-required="true">
+                  <div class="form-message" id="error-name" role="alert">Пожалуйста, введите имя</div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="form-company" class="form-label-active">Компания *</label>
+                  <input type="text" id="form-company" class="form-input" placeholder="ООО ИмпортПлюс" required aria-required="true">
+                  <div class="form-message" id="error-company" role="alert">Пожалуйста, укажите вашу компанию</div>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-phone" class="form-label-active">Телефон *</label>
+                  <input type="tel" id="form-phone" class="form-input" placeholder="+7 (999) 123-45-67" required aria-required="true">
+                  <div class="form-message" id="error-phone" role="alert">Пожалуйста, укажите контактный телефон</div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="form-email" class="form-label-active">Email *</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="partner@company.ru" required aria-required="true">
+                  <div class="form-message" id="error-email" role="alert">Пожалуйста, введите корректный адрес почты</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label-active">Направление сотрудничества *</label>
+                <div class="custom-select" id="custom-direction" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                  <div class="custom-select__trigger">
+                    <span class="custom-select__text placeholder">Выберите интересующее направление</span>
+                    <svg class="custom-select__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                  <ul class="custom-select__options" role="listbox" aria-label="Направление сотрудничества">
+                    <li class="custom-select__option" data-value="logistics" role="option">Грузоперевозки и таможенное оформление (ВЭД)</li>
+                    <li class="custom-select__option" data-value="tourism" role="option">Туризм, сафари и отдых в Африке</li>
+                    <li class="custom-select__option" data-value="realestate" role="option">Инвестиции и покупка недвижимости в Африке</li>
+                    <li class="custom-select__option" data-value="construction" role="option">Строительство вилл и объектов под ключ</li>
+                    <li class="custom-select__option" data-value="machinery" role="option">Поставка оборудования и стройматериалов</li>
+                  </ul>
+                </div>
+                <select id="form-direction" required aria-required="true" aria-hidden="true" style="display:none">
+                  <option value="" disabled selected></option>
+                  <option value="logistics">Грузоперевозки и таможенное оформление (ВЭД)</option>
+                  <option value="tourism">Туризм, сафари и отдых в Африке</option>
+                  <option value="realestate">Инвестиции и покупка недвижимости в Африке</option>
+                  <option value="construction">Строительство вилл и объектов под ключ</option>
+                  <option value="machinery">Поставка оборудования и стройматериалов</option>
+                </select>
+                <div class="form-message" id="error-direction" role="alert">Пожалуйста, выберите направление</div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-message" class="form-label-active">Сообщение / Описание задачи</label>
+                <textarea id="form-message" class="form-input" placeholder="Опишите характер груза, маршрут и необходимую поддержку..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" id="form-submit-btn">Отправить запрос</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <a href="#hero" class="footer-logo" id="footer-logo-link" aria-label="AFRICATRADE Наверх">
+          <img src="assets/images/logo.png" alt="AFRICATRADE" class="logo-img">
+          <div class="logo-text-wrapper">
+            <div class="logo-text">AFRICA<span>TRADE</span></div>
+            <div class="logo-subtext">Россия — Африка</div>
+          </div>
+        </a>
+        <div class="footer-copy" id="footer-copyright">
+          &copy; 2026 AFRICATRADE. Все права защищены. <br>
+          Координация поставок, ВЭД консалтинг и логистика Россия — Африка.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Скрипты -->
+  <script src="js/script.js"></script>
+</body>
+</html>
