@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@800;900&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@800;900&display=swap');
 
 :root {
   --bg-main: #FFFFFF;        /* Чистый белый фон страницы */
@@ -1015,13 +1015,18 @@ header:not(.scrolled) .logo-img {
   width: calc(100% - 48px);
 }
 
-/* Partners Scrolling Ticker */
+/* Partners Infinite Marquee */
 .partners-carousel-wrapper {
   overflow: hidden;
   position: relative;
   width: 100%;
   padding: 24px 0;
   background: var(--bg-main);
+  display: flex;
+}
+
+.partners-carousel-wrapper:hover .partners-track {
+  animation-play-state: paused;
 }
 
 .partners-carousel-wrapper::before,
@@ -1029,32 +1034,28 @@ header:not(.scrolled) .logo-img {
   content: '';
   position: absolute;
   top: 0;
-  width: 150px;
+  width: 160px;
   height: 100%;
   z-index: 2;
   pointer-events: none;
 }
-
 .partners-carousel-wrapper::before {
   left: 0;
   background: linear-gradient(to right, var(--bg-main) 0%, transparent 100%);
 }
-
 .partners-carousel-wrapper::after {
   right: 0;
   background: linear-gradient(to left, var(--bg-main) 0%, transparent 100%);
 }
 
-.partners-carousel {
+.partners-track {
   display: flex;
-  width: max-content;
-  animation: scroll 25s linear infinite;
-  gap: 60px;
-  padding-left: 30px;
-}
-
-.partners-carousel:hover {
-  animation-play-state: paused;
+  gap: 64px;
+  flex-shrink: 0;
+  align-items: center;
+  padding-right: 64px;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
 }
 
 .partner-item {
@@ -1063,8 +1064,10 @@ header:not(.scrolled) .logo-img {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  opacity: 0.55;
+  opacity: 0.5;
   transition: opacity var(--transition-speed) var(--transition-easing);
+  cursor: default;
+  flex-shrink: 0;
 }
 
 .partner-item:hover {
@@ -1072,12 +1075,11 @@ header:not(.scrolled) .logo-img {
 }
 
 .partner-logo-img {
-  height: 60px;
-  max-width: 180px;
+  height: 56px;
+  max-width: 160px;
   object-fit: contain;
-  filter: grayscale(100%) opacity(0.7);
-  transition: filter var(--transition-speed) var(--transition-easing),
-              opacity var(--transition-speed) var(--transition-easing);
+  filter: grayscale(100%) opacity(0.65);
+  transition: filter 0.35s ease;
 }
 
 .partner-item:hover .partner-logo-img {
@@ -1090,12 +1092,13 @@ header:not(.scrolled) .logo-img {
   font-size: 10px;
   color: var(--text-muted);
   white-space: nowrap;
+  letter-spacing: 0.04em;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
   100% {
     transform: translateX(-50%);
   }
