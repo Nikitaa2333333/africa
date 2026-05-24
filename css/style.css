@@ -1099,10 +1099,6 @@ header:not(.scrolled) .logo-img {
   from { transform: translateX(0); }
   to   { transform: translateX(-100%); }
 }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 /* Custom Select Dropdown */
 .custom-select {
